@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu-toggle" class="container__botao">
+            <label for="menu-toggle">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">APPLE</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">SAMSUNG</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">MOTOROLA</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">XIAOMI</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">OUTROS...</a></li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Shark Shop" class="container__imagem">
+            <h1 class="container__titulo">
+                <span class="container__titulo--shop">Shark</span>
+                <b class="container__titulo--negrito">Shop</b>
+            </h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu">
+                <li class="opções_item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">APPLE</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">SAMSUNG</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">MOTOROLA</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">XIAOMI</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">OUTROS...</a></li>
+            </ul>
+
+            <li class="opções_item"><a href="#" class="opções_link">Favoritos</a></li>
+            <li class="opções_item"><a href="#" class="opções_link">Minha conta</a></li>
+        </ul>
+
+
+
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+
+            <a href="a" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="a" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe onde comprar?</h2>
+        <p class="banner__texto">Encontre em nosso site o que precisa para seu uso!</p>
+        <input type="search" class="banner_pesquisa" placeholder="Qual aparelho você deseja?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/iphone 12.svg" alt="iphone 12"></div>
+                    <div class="swiper-slide"><img src="img/edge.svg" alt="motorola edge 50"></div>
+                    <div class="swiper-slide"><img src="img/iphone 15.svg" alt="iphone 15"></div>
+                    <div class="swiper-slide"><img src="img/iphone 14.svg" alt="iphone 14"></div>
+                    <div class="swiper-slide"><img src="img/xiaomi.svg" alt="xiaomi"></div>
+                    <div class="swiper-slide"><img src="img/samsung s24.svg" alt="samsung s24"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__descrição">
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-celular">IPHONE 16 PRO</h2>
+                        <p class="descrição__texto">Um aparelho da atualidade com as melhores qualidades...</p>
+                    </div>
+                    <img src="img/iphone 16.svg" alt="iphone 16" class="iphone-16-pro">
+                </div>
+
+                <div class="card__botões">
+                    <ul class="botões">
+                        <li class="botões_item"><img src="img/Favoritos.svg" alt="Favoritar SMARTPHONE"></li>
+                        <li class="botões_item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <a href="#" class="botões__IP16">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel2">
+        <h2 class="carrossel__titulo1">Mais vendidos</h2>
+    
+        <div class="carrossel__container">
+            
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/iphone 12.svg" alt="iPhone 12">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/edge.svg" alt="Motorola Edge 50">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/iphone 15.svg" alt="iPhone 15">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/g24.svg" alt="G24">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/xiaomi.svg" alt="Xiaomi">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/xiaomi pad.svg" alt="Xiaomi Pad">
+                    </div>
+                </div>
+    
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    
+            <!-- Card Section -->
+            <div class="card1">
+                <div class="card1__descrição">
+                    <div class="descrição1">
+                        <h3 class="descrição__titulo1">
+                            <i class="fas fa-star" style="color: #2065FE;"></i>
+                            <i class="fas fa-star" style="color: #2065FE;"></i>
+                            <i class="fas fa-star" style="color: #2065FE;"></i>
+                            <i class="fas fa-star" style="color: #2065FE;"></i>
+                            <i class="fas fa-star" style="color: #2065FE;"></i>
+                            Avaliações
+                        </h3>
+                        <h2 class="descrição__titulo-nome">Juliana Agarikov</h2>
+                        <p class="descrição__texto1">
+                            Muito confiável e a qualidade é impecável.
+                        </p>
+                    </div>
+                    <img src="img/moça.svg" alt="Foto de perfil" class="foto-de-perfil">
+                </div>
+    
+                <div class="card__botões1">
+                    <ul class="botões1">
+                        <li class="botões_item">
+                            <img src="img/Favoritos.svg" alt="Curtir Avaliação">
+                        </li>
+                    </ul>
+                    <a href="#" class="botões__IP16">Avaliar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">IPHONE</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">SAMSUNG</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">MOTOROLA</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">XIAOMI</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">LG</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">POSITIVO</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">IPHONE 16</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">SAMSUNG S24 ULTRA</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Lançamentos de celulares, tablets, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Guilherme Braga</h2>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        })
+    </script>
+</body>
+
+</html>
